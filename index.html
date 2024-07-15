@@ -3,37 +3,36 @@
 
 <!-- *HEAD* -->
 <head>
-    <!-- Set Title -->
-    <title>$mr.mike</title>
-    <!-- Set Icon -->
-    <link rel="icon" href="./assets/pfp.jpg"/>
-    <!-- Set Description -->
+    <!-- Set title -->
+    <title></title>
+    <!-- Set icon -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <!-- Set description -->
     <meta name="description" content="Hi my name is Mike and if you want to find out more about me click on the link."/>
-    <!-- Set Autor -->
+    <!-- Set autor -->
     <meta name="author" content="$mr.mike"/>
-    <!-- OG Type -->
+    <!-- OG type -->
     <meta property="og:type" content="website"/>
-    <!-- OG Type -->
+    <!-- OG title -->
     <meta property="og:title" content="$mr.mike"/>
-    <!-- OG Type -->
+    <!-- OG description -->
     <meta property="og:description" content="Hi my name is Mike and if you want to find out more about me click on the link."/>
-    <!-- OG Type -->
+    <!-- OG image -->
     <meta property="og:image" content="https://i.imgur.com/jR8ugw2.jpeg"/>
-    <!-- OG Type -->
+    <!-- OG locale -->
     <meta property="og:locale" content="en_US"/>
-    <!-- Set Charset -->
+    <!-- Set charset on utf-8 -->
     <meta charset="utf-8"/>
-    <!-- Set Viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <!-- Import Google Fonts -->
+    <!-- Viewport for RWD -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required new rendering kernel for Edge -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Import Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet"> <!-- "Fira Code", monospace; -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"> <!-- "Open Sans", sans-serif; -->
     <!-- Import CSS -->
     <link rel="stylesheet" href="./styles/main.css">
-    <!-- Import JS -->
-    <script src="./js/main.js"></script>
 </head>
 
 <!-- *BODY* -->
@@ -46,253 +45,285 @@
             <a href="#about">ABOUT</a>
             <a href="#skills">SKILLS</a>
             <a href="#projects">PROJECTS</a>
-            <!-- button change locale -->
-            <button id="bt-locale">EN</button>
-            <!-- button change theme -->
-            <button id="bt-theme"><img class="socials_svg" src="./assets/moon.svg" alt="SVG"></button>
         </div>
-
 
         <!-- *ABOUT* -->
         <div id="about">
             <!-- name -->
-            <h1 id="name">$MR.MIKE</h1>
-            <!-- pfp -->
-            <img src="./assets/pfp.jpg" alt="Profile picture">
+            <h1 id="name"></h1>
 
-            <!-- about content -->
-            <div id="about_content">
-                <!-- what makes -->
-                <h2>Full-Stack Developer</h2=>
-                <!-- about -->
-                <p>My about...</p> <!-- TODO: make -->
+            <div id="about_main">
+                <!-- pfp -->
+                <img src="./assets/pfp.jpg" alt="Profile picture">
+
+                <!-- about content -->
+                <div id="about_content">
+                    <!-- what makes -->
+                    <h2 id="about_role"></h2>
+                    <p id="about_text">I am a developer of websites and web applications. He likes to try someing</p>
+                </div>
             </div>
 
             <!-- my goal -->
-            <p id="goal">My goal...</p> <!-- TODO: make -->
+            <i id="goal"></i>
 
             <!-- socials -->
             <div id="socials">
+                <!-- proton mail -->
+                <a href="mailto: mr_mike_eu@proton.me" target="_blank" style="background-position: left;">
+                    <img class="socials_svg" src="./assets/socials/protonmail-light.svg" alt="SVG">
+                    Proton Mail
+                </a>
                 <!-- github -->
-                <a href="https://github.com/mr-mike-mr" target="_blank">
+                <a href="https://github.com/mr-mike-mr" target="_blank" style="background-position: center;">
                     <img class="socials_svg" src="./assets/socials/github-light.svg" alt="SVG">
                     GitHub
                 </a>
                 <!-- discord server -->
-                <a href="https://discord.gg/mCCj29zSwH" target="_blank">
+                <a href="https://discord.gg/mCCj29zSwH" target="_blank" style="background-position: right;">
                     <img class="socials_svg" src="./assets/socials/discord-light.svg" alt="SVG">
                     Discord
                 </a>
                 <!-- spotify -->
-                <a href="https://open.spotify.com/user/31jqrdtnm4stjqr5hrtl4yendbta" target="_blank">
+                <a href="https://open.spotify.com/user/31jqrdtnm4stjqr5hrtl4yendbta" target="_blank" style="background-position: center;">
                     <img class="socials_svg" src="./assets/socials/spotify-light.svg" alt="SVG">
                     Spotify
                 </a>
             </div>
         </div>
 
-
         <!-- *SKILLS* -->
         <div id="skills">
             <!-- title -->
-            <h1>SKILLS</h1>
+            <h1 id="skills_title"></h1>
 
-            <!-- HTML -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/html5-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>HTML</h1>
-            </div>
-            <!-- CSS -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/css3-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>CSS</h1>
-            </div>
-            <!-- TAILWINDCSS -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/tailwindcss-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>TAILWINDCSS</h1>
-            </div>
-            <!-- BOOTSTRAP -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/bootstrap-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>BOOTSTRAP</h1>
-            </div>
-            <!-- JAVASCRIPT -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/javascript-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>JAVASCRIPT</h1>
-            </div>
-            <!-- PYTHON -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/python-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>PYTHON</h1>
-            </div>
-            <!-- LUA -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/lua-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>LUA</h1>
-            </div>
-            <!-- C -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/c-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>C</h1>
-            </div>
-            <!-- BASH -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/gnubash-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>BASH</h1>
-            </div>
-            <!-- JSON -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/json-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>JSON</h1>
-            </div>
-            <!-- .ENV -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/dotenv-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>.ENV</h1>
-            </div>
-            <!-- MYSQL -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/mysql-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>MYSQL</h1>
-            </div>
-            <!-- SQLITE -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/sqlite-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>SQLITE</h1>
-            </div>
-            <!-- GIT -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/git-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>GIT</h1>
-            </div>
-            <!-- NGINX -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/nginx-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>NGINX</h1>
-            </div>
-            <!-- DOCKER -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/docker-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>DOCKER</h1>
-            </div>
-            <!-- VIM -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/vim-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>VIM</h1>
-            </div>
-            <!-- NEOVIM -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/neovim-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>NEOVIM</h1>
-            </div>
-            <!-- FIVEM -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/fivem-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>FIVEM</h1>
-            </div>
-            <!-- ROBLOX STUDIO -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/robloxstudio-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>ROBLOX STUDIO</h1>
-            </div>
-            <!-- RPI -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/raspberrypi-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>RPI</h1>
-            </div>
-            <!-- ARDUINO -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/arduino-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>ARDUINO</h1>
-            </div>
-            <!-- LINUX -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/linux-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>LINUX</h1>
-            </div>
-            <!-- FEDORA -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/fedora-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>FEDORA</h1>
-            </div>
-            <!-- ARCH LINUX -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/archlinux-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>ARCH LINUX</h1>
-            </div>
-            <!-- KALI LINUX -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/kalilinux-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>KALI LINUX</h1>
-            </div>
-            <!-- DEBIAN -->
-            <div class="skill">
-                <!-- svg icon -->
-                <img class="skill_svg" src="./assets/skills/debian-light.svg" alt="SVG">
-                <!-- skill name -->
-                <h1>DEBIAN</h1>
+            <!-- content -->
+            <div id="skills_content">
+                <!-- HTML -->
+                <div class="skill skill-1">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/html5-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a>
+                </div>
+                <!-- CSS -->
+                <div class="skill skill-2">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/css3-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">CSS</a>
+                </div>
+                <!-- TAILWINDCSS -->
+                <div class="skill skill-3">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/tailwindcss-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://tailwindcss.com/" target="_blank">TAILWINDCSS</a>
+                </div>
+                <!-- BOOTSTRAP -->
+                <div class="skill skill-2">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/bootstrap-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://getbootstrap.com/" target="_blank">BOOTSTRAP</a>
+                </div>
+                <!-- JAVASCRIPT -->
+                <div class="skill skill-1">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/javascript-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JAVASCRIPT</a>
+                </div>
+                <!-- PYTHON -->
+                <div class="skill skill-2">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/python-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://www.python.org/" target="_blank">PYTHON</a>
+                </div>
+                <!-- LUA -->
+                <div class="skill skill-3">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/lua-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://www.lua.org/" target="_blank">LUA</a>
+                </div>
+                <!-- C -->
+                <div class="skill skill-2">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/c-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">C</a>
+                </div>
+                <!-- BASH -->
+                <div class="skill skill-1">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/gnubash-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)" target="_blank">BASH</a>
+                </div>
+                <!-- JSON -->
+                <div class="skill skill-2">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/json-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://www.json.org/json-en.html" target="_blank">JSON</a>
+                </div>
+                <!-- .ENV -->
+                <div class="skill skill-3">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/dotenv-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://www.dotenv.org/" target="_blank">.ENV</a>
+                </div>
+                <!-- MYSQL -->
+                <div class="skill skill-2">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/mysql-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://www.mysql.com/" target="_blank">MYSQL</a>
+                </div>
+                <!-- SQLITE -->
+                <div class="skill skill-1">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/sqlite-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://www.sqlite.org/index.html" target="_blank">SQLITE</a>
+                </div>
+                <!-- GIT -->
+                <div class="skill skill-2">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/git-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://git-scm.com/" target="_blank">GIT</a>
+                </div>
+                <!-- NGINX -->
+                <div class="skill skill-3">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/nginx-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://nginx.org/en/" target="_blank">NGINX</a>
+                </div>
+                <!-- DOCKER -->
+                <div class="skill skill-2">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/docker-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://www.docker.com/" target="_blank">DOCKER</a>
+                </div>
+                <!-- VIM -->
+                <div class="skill skill-1">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/vim-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://www.vim.org/" target="_blank">VIM</a>
+                </div>
+                <!-- NEOVIM -->
+                <div class="skill skill-2">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/neovim-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://neovim.io/" target="_blank">NEOVIM</a>
+                </div>
+                <!-- ZED -->
+                <div class="skill skill-3">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/zedindustries-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://zed.dev/" target="_blank">ZED</a>
+                </div>
+                <!-- JETBRAINS -->
+                <div class="skill skill-2">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/jetbrains-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://www.jetbrains.com/" target="_blank">JETBRAINS</a>
+                </div>
+                <!-- FIVEM -->
+                <div class="skill skill-1">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/fivem-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://fivem.net/" target="_blank">FIVEM</a>
+                </div>
+                <!-- ROBLOX STUDIO -->
+                <div class="skill skill-2">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/robloxstudio-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://create.roblox.com/" target="_blank">ROBLOX STUDIO</a>
+                </div>
+                <!-- RPI -->
+                <div class="skill skill-3">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/raspberrypi-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://www.raspberrypi.org/" target="_blank">RPI</a>
+                </div>
+                <!-- ARDUINO -->
+                <div class="skill skill-2">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/arduino-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://www.arduino.cc/" target="_blank">ARDUINO</a>
+                </div>
+                <!-- LINUX -->
+                <div class="skill skill-1">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/linux-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://www.kernel.org/" target="_blank">LINUX</a>
+                </div>
+                <!-- FEDORA -->
+                <div class="skill skill-2">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/fedora-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://fedoraproject.org/" target="_blank">FEDORA</a>
+                </div>
+                <!-- ARCH LINUX -->
+                <div class="skill skill-3">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/archlinux-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://archlinux.org/" target="_blank">ARCH LINUX</a>
+                </div>
+                <!-- KALI LINUX -->
+                <div class="skill skill-2">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/kalilinux-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://www.kali.org/" target="_blank">KALI LINUX</a>
+                </div>
+                <!-- DEBIAN -->
+                <div class="skill skill-1">
+                    <!-- svg icon -->
+                    <img class="skill_svg" src="./assets/skills/debian-light.svg" alt="SVG">
+                    <!-- skill name -->
+                    <a href="https://www.debian.org/" target="_blank">DEBIAN</a>
+                </div>
             </div>
         </div>
-
 
         <!-- *PROJECTS* -->
         <div id="projects">
+            <!-- title -->
+            <h1 id="projects_title"></h1>
+
+            <!-- slide show -->
+            <div id="slideshow">
+                <div id="slide_content">
+                    <h1 id="slide_title"></h1>
+                    <p id="slide_details"></p>
+                    <div id="slide_used"></div>
+                    <a id="slide_link" href="" target="_blank">READ ME</a>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- Import JS -->
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
