@@ -9,8 +9,14 @@ async function type_write_effect_slow() {
     const projects_title = 'PROJECTS'
     const about_role = 'Full-Stack Developer';
 
+    // lenght vars
+    let name_lenght = name.length;
+    let skills_title_lenght = skills_title.length;
+    let projects_title_length = projects_title.length;
+    let about_role_length = about_role.length;
+
     // if name lenght is more then i
-    if (i < name.length) {
+    if (i < name_lenght) {
         // set element content by id
         document.getElementById("name").innerHTML += name.charAt(i);
         // set document title
@@ -18,19 +24,19 @@ async function type_write_effect_slow() {
     }
 
     // if skills_title lenght is more then i
-    if (i < skills_title.length) {
+    if (i < skills_title_lenght) {
         // set element content by id
         document.getElementById("skills_title").innerHTML += skills_title.charAt(i);
     }
 
     // if projects_title lenght is more then i
-    if (i < projects_title.length) {
+    if (i < projects_title_length) {
         // set element content by id
         document.getElementById("projects_title").innerHTML += projects_title.charAt(i);
     }
 
     // if about_role lenght is more then i
-    if (i < about_role.length) {
+    if (i < about_role_length) {
         // set element content by id
         document.getElementById("about_role").innerHTML += about_role.charAt(i);
     }
@@ -38,7 +44,7 @@ async function type_write_effect_slow() {
     // increases i by 1
     i++;
     // call function every 100ms
-    setTimeout(type_write_effect_slow, 100);
+    if (i < name_lenght || i < skills_title_lenght || i < projects_title_length || i < about_role_length) setTimeout(type_write_effect_slow, 100);
 }
 // init _i var
 let _i = 0;
@@ -47,15 +53,18 @@ async function type_write_effect_fast() {
     // vars from texts for type
     const goal = 'My goal is to make applications that will have real use.';
     const about_text = ' new from technology and the like. I try to write clean and elegant code that everyone can understand.';
+    // lenght vars
+    let goal_lenght = goal.length;
+    let about_text_length = about_text.length;
 
     // if goal lenght is more then i
-    if (_i < goal.length) {
+    if (_i < goal_lenght) {
         // set element content by id
         document.getElementById("goal").innerHTML += goal.charAt(_i);
     }
 
     // if about_text lenght is more then i
-    if (_i < about_text.length) {
+    if (_i < about_text_length) {
         // set element content by id
         document.getElementById("about_text").innerHTML += about_text.charAt(_i);
     }
@@ -63,7 +72,7 @@ async function type_write_effect_fast() {
     // increases _i by 1
     _i++;
     // call function every 50ms
-    setTimeout(type_write_effect_fast, 50);
+    if (_i < goal_lenght || _i < about_text_length) setTimeout(type_write_effect_fast, 50);
 }
 // init type write effect functions call
 type_write_effect_slow();
