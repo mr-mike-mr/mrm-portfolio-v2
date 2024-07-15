@@ -120,19 +120,37 @@ async function slideshow() {
         }
     ]
 
-    // set elements by id
-    document.getElementById("slide_title").innerHTML = projects_list[n].title;
-    document.getElementById("slide_details").innerHTML = projects_list[n].details;
-    document.getElementById("slide_link").href = projects_list[n].link;
-
-    // init user string var
+    // init used string var
     let used_string = '';
     // goes through the project_list and puts it into a div
     for (const _used of projects_list[n].used) {
         used_string += '\n<div>'+_used+'</div>';
     }
-    // show used string
-    document.getElementById("slide_used").innerHTML = used_string;
+
+    // elements id vars
+    const slide_title_element = document.getElementById('slide_title');
+    const slide_details_element = document.getElementById('slide_details');
+    const slide_link_element = document.getElementById('slide_link');
+    const slide_used_element = document.getElementById('slide_used');
+
+    // hide elements
+    slide_title_element.style.opacity = 0;
+    slide_details_element.style.opacity = 0;
+    slide_used_element.style.opacity = 0;
+
+    // wait 500ms for animation end
+    setTimeout(() => {
+      // change text and link
+      slide_title_element.innerHTML = projects_list[n].title;
+      slide_details_element.innerHTML = projects_list[n].details;
+      slide_used_element.innerHTML = used_string;
+      slide_link_element.href = projects_list[n].link;
+
+      // show elements
+      slide_title_element.style.opacity = 1;
+      slide_details_element.style.opacity = 1;
+      slide_used_element.style.opacity = 1;
+    }, 500);
 
     // if n is same projects_list length
     if (n == projects_list.length-1) {
