@@ -79,14 +79,14 @@ async function slideshow() {
         // MRM PORTFOLIO V2
         {
             'title': 'MRM Portfolio v2',
-            'details': 'Dynamic and rwd porfolio.',
+            'details': 'Dynamic and responsive porfolio.',
             'used': ['HTML', 'CSS', 'JAVASCRIPT'],
             'link': 'https://github.com/mr-mike-mr/mrm-portfolio-v2'
         },
         // MRM PORTFOLIO V1
         {
             'title': 'MRM Portfolio v1',
-            'details': 'First static and rwd porfolio.',
+            'details': 'First static and responsive porfolio.',
             'used': ['HTML', 'CSS'],
             'link': 'https://github.com/mr-mike-mr/mrm-portfolio-v1'
         },
