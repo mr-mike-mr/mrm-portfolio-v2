@@ -10,6 +10,10 @@
 - Colors: #A6A6A6, #F5F5F5, #121212
 - Fonts: [Open Sans](https://fonts.google.com/specimen/Open+Sans?query=Open+Sans)
 
+## BUGS
+
+- If you have found an bug(s), please report it on [discord](https://discord.gg/mCCj29zSwH)!
+
 ## SHOWCASE
 
 ![showcase link](https://i.imgur.com/GGLAIMx.png)
