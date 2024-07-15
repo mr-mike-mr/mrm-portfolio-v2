@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "firefox",
+            "name": "Browser configuration",
+            "url": "",
+        },
+        
+    ]
+}
