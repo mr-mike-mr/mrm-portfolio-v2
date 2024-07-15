@@ -270,20 +270,20 @@ body {
   font-weight: 600;
   text-align: center;
   margin: 0;
-  transition: opacity 0.5s ease-in-out;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -ms-transition: opacity 0.5s ease-in-out;
-  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 1.0s ease-in-out;
+  -webkit-transition: opacity 1.0s ease-in-out;
+  -moz-transition: opacity 1.0s ease-in-out;
+  -ms-transition: opacity 1.0s ease-in-out;
+  -o-transition: opacity 1.0s ease-in-out;
 }
 #slide_details {
     font-size: 20px;
     text-align: center;
-    transition: opacity 0.5s ease-in-out;
-    -webkit-transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
-    -ms-transition: opacity 0.5s ease-in-out;
-    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 1.0s ease-in-out;
+    -webkit-transition: opacity 1.0s ease-in-out;
+    -moz-transition: opacity 1.0s ease-in-out;
+    -ms-transition: opacity 1.0s ease-in-out;
+    -o-transition: opacity 1.0s ease-in-out;
 }
 #slide_used {
     display: flex;
@@ -301,11 +301,11 @@ body {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    transition: opacity 0.5s ease-in-out;
-    -webkit-transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
-    -ms-transition: opacity 0.5s ease-in-out;
-    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 1.0s ease-in-out;
+    -webkit-transition: opacity 1.0s ease-in-out;
+    -moz-transition: opacity 1.0s ease-in-out;
+    -ms-transition: opacity 1.0s ease-in-out;
+    -o-transition: opacity 1.0s ease-in-out;
 }
 #slide_used div:hover {
     border-width: 2px;
@@ -325,6 +325,12 @@ body {
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+    opacity: 0;
+    transition: opacity 1.0s ease-in-out;
+    -webkit-transition: opacity 1.0s ease-in-out;
+    -moz-transition: opacity 1.0s ease-in-out;
+    -ms-transition: opacity 1.0s ease-in-out;
+    -o-transition: opacity 1.0s ease-in-out;
 }
 #slide_link:hover {
     font-weight: 600;

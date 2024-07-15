@@ -130,13 +130,14 @@ async function slideshow() {
     // elements id vars
     const slide_title_element = document.getElementById('slide_title');
     const slide_details_element = document.getElementById('slide_details');
-    const slide_link_element = document.getElementById('slide_link');
     const slide_used_element = document.getElementById('slide_used');
+    const slide_link_element = document.getElementById('slide_link');
 
     // hide elements
     slide_title_element.style.opacity = 0;
     slide_details_element.style.opacity = 0;
     slide_used_element.style.opacity = 0;
+    slide_link_element.style.opacity = 0;
 
     // wait 500ms for animation end
     setTimeout(() => {
@@ -150,7 +151,8 @@ async function slideshow() {
       slide_title_element.style.opacity = 1;
       slide_details_element.style.opacity = 1;
       slide_used_element.style.opacity = 1;
-    }, 500);
+      slide_link_element.style.opacity = 1;
+    }, 1000);
 
     // if n is same projects_list length
     if (n == projects_list.length-1) {
