@@ -11,7 +11,7 @@
 /** BODY **/
 body {
     background-color: #121212 !important;
-    width: 100%;
+    width: 100vw;
     margin: 0;
 }
 
