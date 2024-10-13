@@ -89,78 +89,65 @@ async function slideshow() {
         {
             'title': 'MRM Portfolio v2',
             'details': 'Dynamic and responsive porfolio.',
-            'used': ['HTML', 'CSS', 'JAVASCRIPT'],
             'link': 'https://github.com/mr-mike-mr/mrm-portfolio-v2'
         },
         // MRM PORTFOLIO V1
         {
             'title': 'MRM Portfolio v1',
             'details': 'First static and responsive porfolio.',
-            'used': ['HTML', 'CSS'],
             'link': 'https://github.com/mr-mike-mr/mrm-portfolio-v1'
         },
         // MRM LINKTREE
         {
             'title': 'MRM Linktree',
             'details': 'Static website from links.',
-            'used': ['HTML', 'CSS', 'TAILWINDCSS'],
             'link': 'https://github.com/mr-mike-mr/mrm-linktree'
         },
         // MRM REMINDER OF IMPORTANT DATED
         {
             'title': 'MRM Reminder of Important Dates',
-            'details': 'Server application that notifies you of important dates. The application also has a built-in database client, configurator and config manager.',
-            'used': ['PYTHON', 'SQLITE3', 'JSON'],
+            'details': 'Server application that notifies you of important dates.',
             'link': 'https://github.com/mr-mike-mr/mrm-reminder-of-important-dates'
         },
         // LOGIN AND REGISTER SYSTEM
         {
             'title': 'Login Register System',
             'details': 'Very simple and unencrypted login/register system.',
-            'used': ['PYTHON', 'SQLITE3'],
             'link': 'https://github.com/mr-mike-mr/login-register-system'
         },
         // SIMPLE CHAT APP
         {
             'title': 'Simple Chat App',
             'details': 'Very simple and unencrypted chat application.',
-            'used': ['PYTHON', 'SQLITE3'],
             'link': 'https://github.com/mr-mike-mr/simple-chat-app'
         }
     ]
 
-    // init used string var
-    let used_string = '';
-    // goes through the project_list and puts it into a div
-    for (const _used of projects_list[n].used) {
-        used_string += '\n<div>'+_used+'</div>';
-    }
-
     // elements id vars
     const slide_title_element = document.getElementById('slide_title');
     const slide_details_element = document.getElementById('slide_details');
-    const slide_used_element = document.getElementById('slide_used');
     const slide_link_element = document.getElementById('slide_link');
+    const slide_count_element = document.getElementById('slide_count');
 
     // hide elements
     slide_title_element.style.opacity = 0;
     slide_details_element.style.opacity = 0;
-    slide_used_element.style.opacity = 0;
     slide_link_element.style.opacity = 0;
+    slide_count_element.style.opacity = 0;
 
     // wait 500ms for animation end
     setTimeout(() => {
       // change text and link
       slide_title_element.innerHTML = projects_list[n].title;
       slide_details_element.innerHTML = projects_list[n].details;
-      slide_used_element.innerHTML = used_string;
       slide_link_element.href = projects_list[n].link;
+      slide_count_element.innerHTML = `${projects_list.length}/${n+1}`;
 
       // show elements
       slide_title_element.style.opacity = 1;
       slide_details_element.style.opacity = 1;
-      slide_used_element.style.opacity = 1;
       slide_link_element.style.opacity = 1;
+      slide_count_element.style.opacity = 1;
     }, 1000);
 
     // if n is same projects_list length
@@ -173,7 +160,7 @@ async function slideshow() {
     }
 
     // call slideshow function every 15seconds
-    setTimeout(slideshow, 15000);
+    setTimeout(slideshow, 5000);
 }
 // init slide show functions call
 slideshow();
